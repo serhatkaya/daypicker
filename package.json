@@ -1,0 +1,17 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "lerna run build --stream",
+    "dev": "lerna run --scope='app' start --stream",
+    "server": "lerna run start-ts --stream"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "lerna": "^8.1.2",
+    "typescript": "^5.4.5"
+  }
+}
