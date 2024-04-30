@@ -11,6 +11,8 @@ The DayPickerComponent is developed with a focus on mobile usage.
 
 ![1714477478238](image/readme/1714477478238.png)
 
+`npm install @serhatkaya/daypicker-core`
+
 ## Framework Documents
 
 - [Angular Docs](/packages/angular)
