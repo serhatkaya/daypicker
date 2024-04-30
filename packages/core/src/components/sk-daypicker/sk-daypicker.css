@@ -1,0 +1,76 @@
+:host {
+  --dp-black: #222;
+  --dp-active-day: #5755fe;
+  --dp-next-day: #008dda;
+  --dp-default-scale-ratio: 0.8;
+  --dp-active-scale-ratio: 1;
+  --dp-active-day-bg: rgb(255 255 255/1);
+  --dp-background: rgb(248 250 252/1);
+}
+
+/* Swiper Container */
+.swiper {
+  user-select: none;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--dp-background);
+}
+
+/* Swiper Slide */
+.swiper-slide {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: var(--dp-black);
+  cursor: pointer;
+  padding: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.swiper-slide-active {
+  background-color: var(--dp-active-day-bg);
+}
+
+/* Active Slide Styles */
+.swiper-slide-active .day-data {
+  color: var(--dp-active-day);
+  transform: scale(var(--dp-active-scale-ratio));
+}
+
+/* Next Slide Styles */
+.dpt-next:not(.swiper-slide-active) .day-data {
+  color: var(--dp-next-day);
+}
+
+/* Day Data Styles */
+.day-data {
+  color: #444;
+  transition: 300ms all;
+  transform: scale(var(--dp-default-scale-ratio));
+  text-align: center;
+}
+
+/* Month Name */
+.month-name {
+  margin: 5px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Day Date */
+.day-date {
+  margin: 15px 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Day Name */
+.day-name {
+  margin: 5px 0;
+  font-size: 1rem;
+}

@@ -1,6 +1,7 @@
 {
   "name": "root",
-  "private": true,
+  "description": "This is mono repo project for DayPicker Component, this package is not published to npm",
+  "private": false,
   "workspaces": [
     "packages/*"
   ],
