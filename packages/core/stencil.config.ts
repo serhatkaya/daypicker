@@ -2,6 +2,7 @@ import { angularOutputTarget } from '@stencil/angular-output-target';
 import { Config } from '@stencil/core';
 import { reactOutputTarget } from '@stencil/react-output-target';
 import { apiSpecGenerator } from './scripts/api-spec-generator';
+import { vueOutputTarget } from '@stencil/vue-output-target';
 
 const componentCorePackage = '@serhatkaya/daypicker-core';
 
@@ -34,6 +35,10 @@ export const config: Config = {
     reactOutputTarget({
       componentCorePackage,
       proxiesFile: '../react-lib/lib/components/stencil-generated/index.ts',
+    }),
+    vueOutputTarget({
+      componentCorePackage,
+      proxiesFile: '../vue-lib/lib/components.ts',
     }),
     apiSpecGenerator({
       file: 'api.txt',

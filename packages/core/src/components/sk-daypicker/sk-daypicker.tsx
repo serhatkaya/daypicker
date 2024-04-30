@@ -121,14 +121,17 @@ export class DayPickerComponent {
       this._config = {
         mode: this.mode,
         onSelect: v => {
-          console.log('selectemit');
           this.selected.emit(v);
         },
-        // onInit: this.init,
+        onInit: () => {
+          this.init.emit();
+        },
         customDate: this.customDate,
         language: this.language,
         customTemplate: this.customTemplate,
-        // onNext: this.next,
+        onNext: day => {
+          this.next.emit(day);
+        },
         startFromToday: this.startFromToday,
         spaceBetween: this.spaceBetween,
         quickSwipeEnabled: this.quickSwipeEnabled,
@@ -176,7 +179,6 @@ export class DayPickerComponent {
           self.releasePreviousSlide();
         },
         activeIndexChange(e) {
-          console.log(self._config);
           if (self._config.onSelect) {
             self._config.onSelect(self.timelineArr[e.activeIndex]);
           }

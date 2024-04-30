@@ -43,7 +43,7 @@
 }
 
 /* Next Slide Styles */
-.dpt-next:not(.swiper-slide-active) .day-data {
+.dp-next:not(.swiper-slide-active) .day-data {
   color: var(--dp-next-day);
 }
 

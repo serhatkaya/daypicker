@@ -1,4 +1,4 @@
-import { SkDaypicker, defineCustomElements, DPMode } from '@serhatkaya/daypicker-react';
+import { SkDaypicker, defineCustomElements } from '@serhatkaya/daypicker-react';
 import { useState } from 'react';
 import './App.css';
 import reactLogo from './assets/react.svg';
@@ -27,7 +27,7 @@ function App() {
       </div>
 
       <div className="card">
-        <SkDaypicker mode={DPMode.CURRENT} />
+        <SkDaypicker mode={'CURRENT'} />
       </div>
       <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
     </>

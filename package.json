@@ -8,7 +8,8 @@
   "scripts": {
     "build": "lerna run build --stream",
     "dev": "lerna run --scope='app' start --stream",
-    "server": "lerna run start-ts --stream"
+    "server": "lerna run start-ts --stream",
+    "build:all": "node scripts/build.js"
   },
   "devDependencies": {
     "@types/node": "^20.12.7",

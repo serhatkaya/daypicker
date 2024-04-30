@@ -12,6 +12,8 @@ It renders a swiper-based interface for selecting days within a specified range.
 ## Framework Documents
 
 - [Angular Docs](/packages/angular)
+- [Vue Docs](/packages/vue-lib)
+- [React Docs](/packages/react-lib)
 
 ## Properties
 
