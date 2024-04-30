@@ -1,4 +1,4 @@
-# sk-daypicker
+# DayPicker Component Core
 
 <!-- Auto Generated Below -->
 
@@ -6,6 +6,8 @@
 
 DayPickerComponent is a custom Stencil component for displaying a day picker.
 It renders a swiper-based interface for selecting days within a specified range.
+
+The DayPickerComponent is developed with a focus on mobile usage.
 
 ![1714477478238](image/readme/1714477478238.png)
 
