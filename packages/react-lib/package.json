@@ -1,0 +1,42 @@
+{
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "name": "@serhatkaya/daypicker-react",
+  "version": "0.0.0-rc1",
+  "description": "> TODO: description",
+  "author": "serhatkaya <serhatkaya.sr@gmail.com>",
+  "homepage": "https://github.com/serhatkaya/daypicker#readme",
+  "license": "ISC",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serhatkaya/daypicker.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/react-library.test.js",
+    "build": "npm run tsc",
+    "tsc": "tsc -p . --outDir ./dist"
+  },
+  "bugs": {
+    "url": "https://github.com/serhatkaya/daypicker/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@serhatkaya/daypicker-core": "*"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.4.5"
+  }
+}

@@ -1,5 +1,9 @@
-import { Config } from '@stencil/core';
 import { angularOutputTarget } from '@stencil/angular-output-target';
+import { Config } from '@stencil/core';
+import { reactOutputTarget } from '@stencil/react-output-target';
+import { apiSpecGenerator } from './scripts/api-spec-generator';
+
+const componentCorePackage = '@serhatkaya/daypicker-core';
 
 export const config: Config = {
   namespace: 'daypicker-core',
@@ -8,12 +12,6 @@ export const config: Config = {
       type: 'dist',
       esmLoaderPath: '../loader',
     },
-    angularOutputTarget({
-      componentCorePackage: '@serhatkaya/daypicker-core',
-      outputType: 'component',
-      directivesProxyFile: '../angular/projects/component-library/src/lib/stencil-generated/components.ts',
-      directivesArrayFile: '../angular/projects/component-library/src/lib/stencil-generated/index.ts',
-    }),
     {
       type: 'dist-custom-elements',
       customElementsExportBehavior: 'auto-define-custom-elements',
@@ -27,6 +25,19 @@ export const config: Config = {
       type: 'www',
       serviceWorker: null, // disable service workers
     },
+    angularOutputTarget({
+      componentCorePackage,
+      outputType: 'component',
+      directivesProxyFile: '../angular/projects/component-library/src/lib/stencil-generated/components.ts',
+      directivesArrayFile: '../angular/projects/component-library/src/lib/stencil-generated/index.ts',
+    }),
+    reactOutputTarget({
+      componentCorePackage,
+      proxiesFile: '../react-lib/lib/components/stencil-generated/index.ts',
+    }),
+    apiSpecGenerator({
+      file: 'api.txt',
+    }) as any,
   ],
   testing: {
     browserHeadless: 'new',

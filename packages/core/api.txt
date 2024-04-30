@@ -1,0 +1,14 @@
+
+sk-daypicker,shadow
+sk-daypicker,prop,config,DPOptions,undefined,false,false
+sk-daypicker,prop,customDate,DPCustomDate,undefined,false,false
+sk-daypicker,prop,customTemplate,(day: DPDay) => string,undefined,false,false
+sk-daypicker,prop,language,string,undefined,false,false
+sk-daypicker,prop,mode,DPMode.CURRENT_MONTH | DPMode.CUSTOM,undefined,false,false
+sk-daypicker,prop,quickSwipeEnabled,boolean,undefined,false,false
+sk-daypicker,prop,spaceBetween,number,undefined,false,false
+sk-daypicker,prop,startFromToday,boolean,undefined,false,false
+sk-daypicker,prop,useDefaults,boolean,undefined,false,false
+sk-daypicker,event,init,any,true
+sk-daypicker,event,next,DPDay,true
+sk-daypicker,event,selected,DPDay,true
