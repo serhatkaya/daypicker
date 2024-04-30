@@ -1,6 +1,7 @@
 {
   "name": "@serhatkaya/daypicker-angular",
-  "version": "1.0.0",
+  "version": "1.0.2",
+  "description": "Angular DayPicker Component",
   "peerDependencies": {
     "@angular/common": "16.x - 17.x",
     "@angular/core": "16.x - 17.x",
@@ -10,6 +11,21 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
+  "keywords": [
+    "timeline",
+    "daypicker",
+    "datepicker",
+    "angular"
+  ],
   "sideEffects": false,
-  "private": false
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "githttps://github.com/serhatkaya/daypicker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/serhatkaya/daypicker/issues"
+  },
+  "homepage": "https://github.com/serhatkaya/daypicker#readme",
+  "license": "ISC"
 }

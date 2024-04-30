@@ -1,6 +1,6 @@
 {
   "name": "@serhatkaya/daypicker-core",
-  "version": "0.0.0-rc.5",
+  "version": "1.0.2",
   "description": "DaypickerComponent Core",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
@@ -23,6 +23,14 @@
       "types": "./loader/index.d.ts"
     }
   },
+  "keywords": [
+    "timeline",
+    "daypicker",
+    "datepicker",
+    "angular",
+    "vue",
+    "react"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/serhatkaya/daypicker"
@@ -49,7 +57,7 @@
     "jest-cli": "^29.7.0",
     "puppeteer": "^21.9.0"
   },
-  "license": "MIT",
+  "license": "ISC",
   "dependencies": {
     "swiper": "^11.1.1"
   },

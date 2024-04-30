@@ -4,7 +4,7 @@
   "types": "dist/types/index.d.ts",
   "name": "@serhatkaya/daypicker-react",
   "version": "1.0.0",
-  "description": "> TODO: description",
+  "description": "React DayPicker Component",
   "author": "serhatkaya <serhatkaya.sr@gmail.com>",
   "homepage": "https://github.com/serhatkaya/daypicker#readme",
   "license": "ISC",
@@ -12,6 +12,12 @@
     "lib": "lib",
     "test": "__tests__"
   },
+  "keywords": [
+    "timeline",
+    "daypicker",
+    "datepicker",
+    "react"
+  ],
   "files": [
     "dist"
   ],

@@ -1,9 +1,9 @@
 {
   "name": "@serhatkaya/daypicker-vue",
   "version": "1.0.0",
-  "description": "> TODO: description",
+  "description": "Vue 3 DayPicker Component",
   "author": "serhatkaya <serhatkaya.sr@gmail.com>",
-  "homepage": "https://github.com/serhatkaya/daypicker-#readme",
+  "homepage": "https://github.com/serhatkaya/daypicker#readme",
   "license": "ISC",
   "main": "dist/index.js",
   "directories": {
@@ -13,9 +13,15 @@
   "files": [
     "dist"
   ],
+  "keywords": [
+    "timeline",
+    "daypicker",
+    "datepicker",
+    "vue3"
+  ],
   "repository": {
     "type": "git",
-    "url": "githttps://github.com/serhatkaya/daypicker-.git"
+    "url": "githttps://github.com/serhatkaya/daypicker.git"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
@@ -23,7 +29,7 @@
     "tsc": "tsc -p . --outDir ./dist"
   },
   "bugs": {
-    "url": "https://github.com/serhatkaya/daypicker-/issues"
+    "url": "https://github.com/serhatkaya/daypicker/issues"
   },
   "devDependencies": {
     "vue": "^3.4.26"
