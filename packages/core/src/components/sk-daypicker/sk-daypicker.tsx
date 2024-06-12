@@ -221,14 +221,26 @@ export class DayPickerComponent {
   renderDay(dpt: DPDay, i: number) {
     if (this._config.customTemplate) {
       return (
-        <div class="swiper-slide" data-slide={i}>
+        <div
+          class="swiper-slide"
+          data-slide={i}
+          onClick={() => {
+            this.swiper.slideTo(i, 500, true);
+          }}
+        >
           {this._config.customTemplate(dpt)}
         </div>
       );
     }
 
     return (
-      <div class="swiper-slide" data-slide={i}>
+      <div
+        class="swiper-slide"
+        data-slide={i}
+        onClick={() => {
+          this.swiper.slideTo(i, 500, true);
+        }}
+      >
         <div class="day-data">
           <h3 class="month-name">{dpt.localizedNames.month}</h3>
           <h1 class="day-date">{dpt.day}</h1>

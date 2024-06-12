@@ -10,3 +10,4 @@
 
 export type * from './components.d.ts';
 export * from './types/types.i';
+export * from './components/sk-daypicker/sk-daypicker';

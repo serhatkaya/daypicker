@@ -3,7 +3,7 @@
   "module": "dist/index.js",
   "types": "dist/types/index.d.ts",
   "name": "@serhatkaya/daypicker-react",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "React DayPicker Component",
   "author": "serhatkaya <serhatkaya.sr@gmail.com>",
   "homepage": "https://github.com/serhatkaya/daypicker#readme",

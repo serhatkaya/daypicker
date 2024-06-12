@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "build": "lerna run build --stream",
-    "dev": "lerna run --scope='app' start --stream",
+    "dev": "lerna run --scope='@serhatkaya/daypicker-core' start --stream",
     "server": "lerna run start-ts --stream",
     "build:all": "node scripts/build.js"
   },
